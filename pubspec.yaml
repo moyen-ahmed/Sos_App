@@ -1,0 +1,80 @@
+name: sos_app
+description: "A new Flutter project."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.2
+
+# App icon configuration
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/sos_icon.png"
+  adaptive_icon_background: "#FF0000"  # SOS color (red)
+  adaptive_icon_foreground: "assets/sos_icon.png"  # Can use same image for simplicity
+
+# Native splash screen configuration - this should be at the root level, not nested under flutter_launcher_icons
+flutter_native_splash:
+  android: true
+  ios: true
+  web: false
+  color: "#ec7063"  # Red background color for your SOS app
+  image: "assets/sos_icon.png"  # Your app logo
+  branding: "assets/lettter.png"  # Optional branding image at bottom
+  # Optional additional parameters:
+  color_dark: "#FF0000"  # For dark mode support
+  image_dark: "assets/sos_icon.png"
+  # Fullscreen mode
+  fullscreen: true
+  # Android 12 settings (optional)
+  android_12:
+    image: "assets/sos_icon.png"
+    icon_background_color: "#FF0000"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  google_fonts: ^6.2.1
+  carousel_slider: ^5.0.0
+  webview_flutter: ^4.10.0
+  url_launcher: ^6.3.1
+  fluttertoast: ^8.2.12
+  animate_do: ^4.2.0
+  firebase_core: ^3.12.1
+  firebase_auth: ^5.5.1
+  cloud_firestore: ^5.6.5
+  shared_preferences: ^2.5.3
+  permission_handler: ^11.4.0
+  flutter_contacts: ^1.1.9+2
+  sqflite: ^2.4.2
+  sqflite_common_ffi: ^2.3.5
+  flutter_phone_direct_caller: ^2.2.1
+  torch_light: ^1.1.0
+  flutter_compass: ^0.8.1
+  geolocator: ^14.0.0
+  geocoding: ^3.0.0
+  another_telephony: ^0.4.1
+  image_picker: ^1.1.2
+  firebase_storage: ^12.4.5
+  uuid: ^4.5.1
+  path_provider: ^2.1.5
+  path: ^1.9.1
+  english_words: ^4.0.0
+  cached_network_image: ^3.4.1
+  intl: ^0.20.2
+  flutter_launcher_icons: ^0.14.3
+  shimmer: ^3.0.0
+  google_maps_flutter: ^2.12.1
+  flutter_native_splash: ^2.4.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
